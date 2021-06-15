@@ -1,13 +1,16 @@
 header {
     background-image: url('/dist/img/header-image-homepage.jpg');
-    height: 60rem;
+    color: $cube_white;
+    height: 55rem;
+    position: relative;
+
 
     img {
-        width: 19rem;
+        width: 18rem;
         margin: 2rem 0;
     }
 
-    nav {
+    div {
         align-self: center;
 
         ul {
@@ -25,9 +28,12 @@ header {
                 }
             }
 
+            li:first-child a {
+                color: $cube_primary;
+            }
+
             li:last-child a {
-                background-color: $cube_primary;
-                padding: 0.5rem 2rem;
+                @include btn;
             }
         }
     }

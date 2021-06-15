@@ -1,0 +1,27 @@
+.jumbo_text {
+    position: absolute;
+    top: 18rem;
+    left: 32rem;
+    width: 32%;
+
+
+    h2 {
+        font-size: 4rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+
+        span {
+            color: $cube_primary;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+    }
+
+    &>span {
+        @include btn;
+        text-transform: uppercase;
+    }
+}
