@@ -1,0 +1,34 @@
+header {
+    background-image: url('/dist/img/header-image-homepage.jpg');
+    height: 60rem;
+
+    img {
+        width: 19rem;
+        margin: 2rem 0;
+    }
+
+    nav {
+        align-self: center;
+
+        ul {
+
+            li {
+                margin-left: 2.5rem;
+                text-transform: uppercase;
+                display: inline-block;
+
+                a {
+                    text-decoration: none;
+                    color: $cube_white;
+                    font-weight: 300;
+                    font-size: 0.9rem;
+                }
+            }
+
+            li:last-child a {
+                background-color: $cube_primary;
+                padding: 0.5rem 2rem;
+            }
+        }
+    }
+}

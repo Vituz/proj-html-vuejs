@@ -8,12 +8,39 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./dist/css/app.css">
 
-    <title>Document</title>
+    <title>Avada Health</title>
 </head>
 <body>
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <div class="container just_between">
+                <img src="./dist/img/medical_logo_2x_light.png" alt="Avada Health Logo">
 
-    
-    
+                <nav id="menu" >
+                    <ul>
+                        <li v-for="item in menu">
+                            <a href="#">{{ item }}</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- /Header -->
+
+        <!-- Main -->
+        <main>
+
+        </main>
+        <!-- /Main -->
+
+        <!-- Footer -->
+        <footer>
+
+        </footer>
+        <!-- /Footer -->
+    </div>
+
     <!-- VueJS -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 

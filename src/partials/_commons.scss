@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.just_between {
+    display: flex;
+    justify-content: space-between;
+}

@@ -9,7 +9,9 @@
 
 var app = new Vue({
   el: '#app',
-  data: {},
+  data: {
+    menu: ['home', 'about', 'departments', 'articles', 'make appointment']
+  },
   methods: {}
 });
 
