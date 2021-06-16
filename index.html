@@ -8,6 +8,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./dist/css/app.css">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+   	 integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+   	 crossorigin="anonymous" />
+
+
     <title>Avada Health</title>
 </head>
 <body>
@@ -50,8 +56,12 @@
 
         <!-- Main -->
         <main>
-            <div class="container">
-                <div class="welcome_title">
+
+            <!-- Welcome Section -->
+            <div class="welcome">
+                <div class="container">
+
+                    <!-- Title -->
                     <h2>
                         Welcome to Avada Healt
                     </h2>
@@ -59,40 +69,112 @@
                     <p>
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
                     </p>
-                </div>
+               
 
-                <div class="card_container">
-                    <div class="card">
-                        <img src="./dist/img/icon-1.png" alt="">
-                        <h3>same day appointments</h3>
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img src="./dist/img/icon-2.png" alt="">
-                        <h3>world class facilities</h3>
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img src="./dist/img/icon-3.png" alt="">
-                        <h3>expert doctors</h3>
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img src="./dist/img/icon-4.png" alt="">
-                        <h3>complementary therapies</h3>
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                        </p>
-                    </div>
-                </div>
+                    <!-- Welcome Cards -->
+                    <div class="card_container">
 
+                        <!-- Appointments -->
+                        <div class="card">
+                            <img src="./dist/img/icon-1.png" alt="">
+                            <h3>same day appointments</h3>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            </p>
+                        </div>
+
+                        <!-- Facilities -->
+                        <div class="card">
+                            <img src="./dist/img/icon-2.png" alt="">
+                            <h3>world class facilities</h3>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            </p>
+                        </div>
+
+                        <!-- Doctors -->
+                        <div class="card">
+                            <img src="./dist/img/icon-3.png" alt="">
+                            <h3>expert doctors</h3>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            </p>
+                        </div>
+
+                        <!-- Therapies -->
+                        <div class="card">
+                            <img src="./dist/img/icon-4.png" alt="">
+                            <h3>complementary therapies</h3>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /Welcome Cards -->
+                </div>
             </div>
+            <!-- /Welcome Section -->
+
+            <!-- Meet Section -->
+            <div class="meet">
+                <div class="container">
+
+                    <!-- Section Image -->
+                    <img src="./dist/img/icon-5.png" alt="">
+
+                    <!-- Section Title -->
+                    <h2>
+                        meet our doctors
+                    </h2>
+
+                    <hr>
+
+                    <!-- Section Paragraph -->
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                    </p>
+
+                    <!-- <div class="card_container"> -->
+                        <div class="card_container">
+                            <div class="card" v-for="(doc, index) in doctor">
+
+                                <!-- Doc Image -->
+                                <img :src="'./dist/img/' + doc.img + '.jpg'" alt="Doctor Image">
+
+                                <!-- Doc Info -->
+                                <div>
+
+                                    <!-- Doc Name -->
+                                    <h3>{{ doc.name }}</h3>
+
+                                    <!-- Doc Role -->
+                                    <h4> {{ doc.role }} </h4>
+
+                                    <!-- Doc Description -->
+                                    <p> {{ doc.desc }} </p>
+
+                                    <!-- Social Link -->
+                                    <div class="social_icon">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-instagram-square"></i>
+                                        </a>
+                                    </div>
+                                    <!-- /Social Link -->
+                                </div>
+                                <!-- /Doc Info -->
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                    
+                </div>
+            </div>
+            <!-- /Meet Section -->
         </main>
         <!-- /Main -->
 

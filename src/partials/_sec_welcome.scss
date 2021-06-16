@@ -1,15 +1,14 @@
-    .welcome_title {
-        width: 80%;
+    .welcome {
         margin: auto;
         text-align: center;
         color: $cube_text;
         padding-top: 5rem;
 
-        h2 {
+        &>h2 {
             @include section_title;
         }
 
-        p {
+        &>div>p {
             @include section_p;
         }
     }

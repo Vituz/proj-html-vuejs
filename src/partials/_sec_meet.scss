@@ -1,3 +1,66 @@
 .meet {
-    background-color: ;
+    background-color: $median_bg;
+
+
+    &>div {
+        padding: 5rem 0;
+        text-align: center;
+        color: $cube_text;
+
+        img {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            @include section_title;
+            text-transform: uppercase;
+            // color: $cube_text;
+        }
+
+        hr {
+            @include section_hr;
+        }
+
+        p {
+            @include section_p;
+        }
+    }
+
+    .card_container {
+
+        .card {
+            background-color: $cube_white;
+
+            img {
+                width: 100%;
+            }
+
+            &>div {
+                text-align: left;
+
+                h3 {
+                    width: 84%;
+                    margin: auto;
+                }
+
+                h4 {
+                    width: 84%;
+                    margin: auto;
+                    font-weight: 300;
+                    margin-top: 1rem;
+                }
+
+                .social_icon {
+                    width: 84%;
+                    margin: auto;
+                    margin: 2rem auto;
+
+                    i {
+                        @include social_i;
+                    }
+                }
+            }
+
+        }
+    }
 }

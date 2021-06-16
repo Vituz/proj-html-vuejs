@@ -12,9 +12,16 @@
 
 @mixin section_p {
     font-size: 1.5rem;
-    line-height: 2rem;
-    margin: 1rem 0;
+    line-height: 3rem;
+    margin: 1rem auto;
     font-weight: 300;
+    width: 84%;
+}
+
+@mixin section_hr {
+    width: 30%;
+    margin: 2rem auto;
+    border: 1px solid $cube_gray;
 }
 
 // /Section element
@@ -31,12 +38,27 @@
     color: $cube_text;
     font-weight: 300;
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 @mixin card_p {
     font-weight: 300;
     font-size: 0.9rem;
     line-height: 1.8rem;
+    color: $cube_text;
 }
 
 // /Card element
+
+@mixin standard_a {
+    text-decoration: none;
+    color: $cube_white;
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+}
+
+@mixin social_i {
+    font-size: 2rem;
+    margin: 0.2rem;
+}

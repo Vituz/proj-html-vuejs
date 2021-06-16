@@ -1,5 +1,5 @@
 header {
-    background-image: url('/dist/img/header-image-homepage.jpg');
+    background-image: url('../img/header-image-homepage.jpg');
     color: $cube_white;
     height: 55rem;
     background-size: cover;
@@ -25,11 +25,7 @@ header {
                     display: inline-block;
 
                     a {
-                        text-decoration: none;
-                        color: $cube_white;
-                        font-weight: 300;
-                        font-size: 0.9rem;
-                        letter-spacing: 0.2rem;
+                        @include standard_a;
                     }
                 }
 

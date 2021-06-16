@@ -22,8 +22,20 @@ body {
   justify-content: space-between;
 }
 
+.fa-facebook-square {
+  color: #3C5998;
+}
+
+.fa-twitter-square {
+  color: #54ACEE;
+}
+
+.fa-instagram-square {
+  color: #3F729B;
+}
+
 header {
-  background-image: url("/dist/img/header-image-homepage.jpg");
+  background-image: url("../img/header-image-homepage.jpg");
   color: #ffffff;
   height: 55rem;
   background-size: cover;
@@ -62,7 +74,7 @@ header nav div ul li:last-child a {
 
 .jumbo_text {
   width: 60%;
-  margin: 10rem 0;
+  margin: 7rem 0;
 }
 .jumbo_text h2 {
   font-size: 4rem;
@@ -83,22 +95,22 @@ header nav div ul li:last-child a {
   text-transform: uppercase;
 }
 
-.welcome_title {
-  width: 80%;
+.welcome {
   margin: auto;
   text-align: center;
   color: #46525F;
   padding-top: 5rem;
 }
-.welcome_title h2 {
+.welcome > h2 {
   font-size: 2.5rem;
   font-weight: 300;
 }
-.welcome_title p {
+.welcome > div > p {
   font-size: 1.5rem;
-  line-height: 2rem;
-  margin: 1rem 0;
+  line-height: 3rem;
+  margin: 1rem auto;
   font-weight: 300;
+  width: 84%;
 }
 
 .card_container {
@@ -114,9 +126,68 @@ header nav div ul li:last-child a {
   color: #46525F;
   font-weight: 300;
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 .card_container .card p {
   font-weight: 300;
   font-size: 0.9rem;
   line-height: 1.8rem;
+  color: #46525F;
+}
+
+.meet {
+  background-color: #F1EFEF;
+}
+.meet > div {
+  padding: 5rem 0;
+  text-align: center;
+  color: #46525F;
+}
+.meet > div img {
+  margin-bottom: 2rem;
+}
+.meet > div h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.meet > div hr {
+  width: 30%;
+  margin: 2rem auto;
+  border: 1px solid #BCBCBD;
+}
+.meet > div p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin: 1rem auto;
+  font-weight: 300;
+  width: 84%;
+}
+.meet .card_container .card {
+  background-color: #ffffff;
+}
+.meet .card_container .card img {
+  width: 100%;
+}
+.meet .card_container .card > div {
+  text-align: left;
+}
+.meet .card_container .card > div h3 {
+  width: 84%;
+  margin: auto;
+}
+.meet .card_container .card > div h4 {
+  width: 84%;
+  margin: auto;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+.meet .card_container .card > div .social_icon {
+  width: 84%;
+  margin: auto;
+  margin: 2rem auto;
+}
+.meet .card_container .card > div .social_icon i {
+  font-size: 2rem;
+  margin: 0.2rem;
 }
