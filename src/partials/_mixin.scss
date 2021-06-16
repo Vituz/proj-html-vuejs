@@ -1,0 +1,42 @@
+@mixin btn {
+    background-color: $cube_primary;
+    padding: 0.7rem 1.7rem;
+    letter-spacing: 0.2rem;
+}
+
+// Section element
+@mixin section_title {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+@mixin section_p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+// /Section element
+
+
+// Card element
+@mixin card_margin {
+    margin: 4rem 0.5rem;
+    text-align: center;
+}
+
+@mixin card_title {
+    text-transform: uppercase;
+    color: $cube_text;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+@mixin card_p {
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+}
+
+// /Card element

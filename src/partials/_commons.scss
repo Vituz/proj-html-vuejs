@@ -19,9 +19,3 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
-@mixin btn {
-    background-color: $cube_primary;
-    padding: 0.7rem 1.7rem;
-    letter-spacing: 0.2rem;
-}

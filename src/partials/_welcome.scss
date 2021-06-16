@@ -6,15 +6,11 @@
         padding-top: 5rem;
 
         h2 {
-            font-size: 2.5rem;
-            font-weight: 300;
+            @include section_title;
         }
 
         p {
-            font-size: 1.5rem;
-            line-height: 2rem;
-            margin: 1rem 0;
-            font-weight: 300;
+            @include section_p;
         }
     }
 
@@ -23,20 +19,14 @@
         justify-content: space-around;
 
         .card {
-            margin: 4rem 0.5rem;
-            text-align: center;
+            @include card_margin;
 
             h3 {
-                text-transform: uppercase;
-                color: $cube_text;
-                font-weight: 300;
-                margin-bottom: 1rem;
+                @include card_title;
             }
 
             p {
-                font-weight: 300;
-                font-size: 0.9rem;
-                line-height: 1.8rem;
+                @include card_p;
             }
         }
     }
