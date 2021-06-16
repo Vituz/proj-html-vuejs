@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 52%;
   margin: auto;
 }
 
@@ -26,40 +26,43 @@ header {
   background-image: url("/dist/img/header-image-homepage.jpg");
   color: #ffffff;
   height: 55rem;
-  position: relative;
+  background-size: cover;
 }
-header img {
+header nav {
+  width: 90%;
+  margin: auto;
+}
+header nav img {
   width: 18rem;
   margin: 2rem 0;
 }
-header div {
+header nav div {
   align-self: center;
 }
-header div ul li {
+header nav div ul li {
   margin-left: 2.5rem;
   text-transform: uppercase;
   display: inline-block;
 }
-header div ul li a {
+header nav div ul li a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 300;
   font-size: 0.9rem;
+  letter-spacing: 0.2rem;
 }
-header div ul li:first-child a {
+header nav div ul li:first-child a {
   color: #39AFBB;
 }
-header div ul li:last-child a {
+header nav div ul li:last-child a {
   background-color: #39AFBB;
   padding: 0.7rem 1.7rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
 }
 
 .jumbo_text {
-  position: absolute;
-  top: 18rem;
-  left: 32rem;
-  width: 32%;
+  width: 60%;
+  margin: 10rem 0;
 }
 .jumbo_text h2 {
   font-size: 4rem;
@@ -76,6 +79,44 @@ header div ul li:last-child a {
 .jumbo_text > span {
   background-color: #39AFBB;
   padding: 0.7rem 1.7rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
+}
+
+.welcome_title {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: #46525F;
+  padding-top: 5rem;
+}
+.welcome_title h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.welcome_title p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 1rem 0;
+  font-weight: 300;
+}
+
+.card_container {
+  display: flex;
+  justify-content: space-around;
+}
+.card_container .card {
+  margin: 4rem 0.5rem;
+  text-align: center;
+}
+.card_container .card h3 {
+  text-transform: uppercase;
+  color: #46525F;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.card_container .card p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
 }

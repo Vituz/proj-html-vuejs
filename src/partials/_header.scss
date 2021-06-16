@@ -2,38 +2,44 @@ header {
     background-image: url('/dist/img/header-image-homepage.jpg');
     color: $cube_white;
     height: 55rem;
-    position: relative;
+    background-size: cover;
+
+    nav {
+        width: 90%;
+        margin: auto;
 
 
-    img {
-        width: 18rem;
-        margin: 2rem 0;
-    }
+        img {
+            width: 18rem;
+            margin: 2rem 0;
+        }
 
-    div {
-        align-self: center;
+        div {
+            align-self: center;
 
-        ul {
+            ul {
 
-            li {
-                margin-left: 2.5rem;
-                text-transform: uppercase;
-                display: inline-block;
+                li {
+                    margin-left: 2.5rem;
+                    text-transform: uppercase;
+                    display: inline-block;
 
-                a {
-                    text-decoration: none;
-                    color: $cube_white;
-                    font-weight: 300;
-                    font-size: 0.9rem;
+                    a {
+                        text-decoration: none;
+                        color: $cube_white;
+                        font-weight: 300;
+                        font-size: 0.9rem;
+                        letter-spacing: 0.2rem;
+                    }
                 }
-            }
 
-            li:first-child a {
-                color: $cube_primary;
-            }
+                li:first-child a {
+                    color: $cube_primary;
+                }
 
-            li:last-child a {
-                @include btn;
+                li:last-child a {
+                    @include btn;
+                }
             }
         }
     }

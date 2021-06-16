@@ -10,6 +10,7 @@ const app = new Vue({
             'articles',
             'make appointment'
         ],
+       
     },
 
     methods:{
