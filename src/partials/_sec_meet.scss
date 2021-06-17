@@ -1,32 +1,9 @@
 .meet {
     background-color: $median_bg;
 
+    @include standard_section;
 
-    &>div {
-        padding: 5rem 0;
-        text-align: center;
-        color: $cube_text;
-
-        img {
-            margin-bottom: 2rem;
-        }
-
-        h2 {
-            @include section_title;
-            text-transform: uppercase;
-            // color: $cube_text;
-        }
-
-        hr {
-            @include section_hr;
-        }
-
-        p {
-            @include section_p;
-        }
-    }
-
-    .card_container {
+    & .card_container {
 
         .card {
             background-color: $cube_white;
@@ -34,6 +11,7 @@
             img {
                 width: 100%;
             }
+
 
             &>div {
                 text-align: left;
@@ -50,6 +28,11 @@
                     margin-top: 1rem;
                 }
 
+                &>p {
+                    margin: 1rem auto;
+                    width: 84%;
+                }
+
                 .social_icon {
                     width: 84%;
                     margin: auto;
@@ -63,4 +46,8 @@
 
         }
     }
+}
+
+.meet .card {
+    width: 270px;
 }

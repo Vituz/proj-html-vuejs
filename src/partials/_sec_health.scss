@@ -1,0 +1,13 @@
+.health {
+
+    @include standard_section;
+
+    hr {
+        background-color: $cube_gray;
+    }
+
+    .card {
+        width: 33%;
+        margin-bottom: 3rem;
+    }
+}

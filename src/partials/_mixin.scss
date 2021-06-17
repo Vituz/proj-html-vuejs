@@ -28,10 +28,6 @@
 
 
 // Card element
-@mixin card_margin {
-    margin: 4rem 0.5rem;
-    text-align: center;
-}
 
 @mixin card_title {
     text-transform: uppercase;
@@ -54,11 +50,60 @@
     text-decoration: none;
     color: $cube_white;
     font-weight: 300;
-    font-size: 0.9rem;
-    letter-spacing: 0.2rem;
 }
 
 @mixin social_i {
     font-size: 2rem;
     margin: 0.2rem;
+}
+
+// Standard Section
+@mixin standard_section {
+    &>div {
+        padding: 5rem 0;
+        text-align: center;
+        color: $cube_text;
+
+        img {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            @include section_title;
+            text-transform: uppercase;
+        }
+
+        hr {
+            @include section_hr;
+        }
+
+
+        &>p {
+            @include section_p; //eliminare
+        }
+
+    }
+}
+
+// Standard card
+@mixin standard_card {
+
+    .card_container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 6rem 0;
+
+        .card {
+            text-align: center;
+
+            h3 {
+                @include card_title;
+            }
+
+            p {
+                @include card_p;
+            }
+        }
+    }
 }

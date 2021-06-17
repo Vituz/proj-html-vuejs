@@ -1,31 +1,24 @@
-    .welcome {
-        margin: auto;
-        text-align: center;
-        color: $cube_text;
-        padding-top: 5rem;
+.welcome {
+    margin: auto;
+    text-align: center;
+    color: $cube_text;
+    padding-top: 5rem;
 
-        &>h2 {
-            @include section_title;
-        }
-
-        &>div>p {
-            @include section_p;
-        }
+    h2 {
+        @include section_title;
     }
 
-    .card_container {
-        display: flex;
-        justify-content: space-around;
-
-        .card {
-            @include card_margin;
-
-            h3 {
-                @include card_title;
-            }
-
-            p {
-                @include card_p;
-            }
-        }
+    &>div>p {
+        @include section_p;
     }
+}
+
+@include standard_card;
+
+.welcome .card {
+    width: 23%;
+
+    p {
+        font-size: 0.8rem;
+    }
+}

@@ -26,6 +26,31 @@ var app = new Vue({
       role: 'Nurse Practitioner',
       img: 'doctor-3',
       desc: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque'
+    }],
+    healthCards: [{
+      icon: '-14',
+      title: 'rehabilitation center',
+      desc: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas'
+    }, {
+      icon: '-15',
+      title: 'dental implants',
+      desc: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas'
+    }, {
+      icon: '-16',
+      title: 'medicine research',
+      desc: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas'
+    }, {
+      icon: '-11',
+      title: 'blood bank',
+      desc: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas'
+    }, {
+      icon: '-12',
+      title: 'pharmaceutical advice',
+      desc: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas'
+    }, {
+      icon: '-13',
+      title: 'medical counseling',
+      desc: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas'
     }]
   },
   methods: {}
