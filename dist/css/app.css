@@ -335,6 +335,8 @@ header nav div ul li:last-child a {
 .appointment {
   background-image: url("../img/make-an-appointment.jpg");
   padding: 5rem 0;
+  background-size: cover;
+  background-position: center;
 }
 .appointment > div {
   text-align: center;
@@ -360,8 +362,43 @@ header nav div ul li:last-child a {
   width: 84%;
 }
 
+form {
+  width: 84%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 form input,
 form textarea {
+  margin: 1rem 0;
+  padding: 1rem 0.5rem;
   background: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid #BCBCBD;
+}
+form textarea {
+  width: 100%;
+}
+form > input {
+  width: 48%;
+}
+form .date {
+  position: relative;
+  width: 48%;
+  align-self: center;
+}
+form .date .fa-calendar-alt {
+  position: absolute;
+  top: 40%;
+  left: 0.5rem;
+  color: gray;
+}
+form .date > input {
+  width: 100%;
+  padding-left: 2rem;
+}
+form .submit {
+  width: 100%;
+  background-color: #39AFBB;
+  color: #ffffff;
 }

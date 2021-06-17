@@ -1,9 +1,50 @@
 form {
 
+    width: 84%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     input,
     textarea {
 
+        margin: 1rem 0;
+        padding: 1rem 0.5rem;
         background: transparent;
-        border: 1px solid $cube_white;
+        border: 1px solid $cube_gray;
+        // color: white;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    &>input {
+        width: 48%;
+    }
+
+    .date {
+        position: relative;
+        width: 48%;
+        align-self: center;
+
+        .fa-calendar-alt {
+            position: absolute;
+            top: 40%;
+            left: 0.5rem;
+            color: gray;
+        }
+
+        &>input {
+            width: 100%;
+            padding-left: 2rem;
+        }
+    }
+
+    .submit {
+        width: 100%;
+        background-color: $cube_primary;
+        color: $cube_white;
     }
 }
