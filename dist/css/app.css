@@ -417,51 +417,36 @@ form .submit:hover {
 .slider .slider_image {
   width: 50%;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
   padding: 5rem 0;
   overflow-x: hidden;
 }
 .slider .slider_image > div {
-  -webkit-animation: slide_show 10s infinite;
-          animation: slide_show 10s infinite;
+  flex-wrap: nowrap;
+  display: flex;
+  -webkit-animation: slide_show 30s infinite;
+          animation: slide_show 30s infinite;
 }
 
 @-webkit-keyframes slide_show {
   0%, 100% {
-    /* Beggining and end of animation */
-    margin-left: 0%;
-  }
-  30% {
-    /* Beggining of transition
-    margin-left: 0%; /* Until 3 seconds, keep same frame */
+    margin-left: 50%;
   }
   50% {
-    /* End of transition */
     margin-left: -100%;
-    /* in 5 seconds, finish animation
-
-    80% { /* In 8 seconds, start transition to first frame */
+  }
+  80% {
     margin-left: -100%;
   }
 }
 
 @keyframes slide_show {
   0%, 100% {
-    /* Beggining and end of animation */
-    margin-left: 0%;
-  }
-  30% {
-    /* Beggining of transition
-    margin-left: 0%; /* Until 3 seconds, keep same frame */
+    margin-left: 50%;
   }
   50% {
-    /* End of transition */
     margin-left: -100%;
-    /* in 5 seconds, finish animation
-
-    80% { /* In 8 seconds, start transition to first frame */
+  }
+  80% {
     margin-left: -100%;
   }
 }
