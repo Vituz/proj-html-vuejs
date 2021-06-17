@@ -348,7 +348,9 @@
 
             <div class="slider">
                 <div class="slider_image" >
-                    <img :src="logo" alt="logo" v-for="(logo, idnex) in partnerSlider">
+                    <div>
+                        <img :src="logo" alt="logo" v-for="(logo, idnex) in partnerSlider" >
+                    </div>
                 </div>
             </div>
         </main>

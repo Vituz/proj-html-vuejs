@@ -67,6 +67,8 @@ const app = new Vue({
             },
         ],
 
+        counter: 0,
+
         partnerSlider:[
             './dist/img/client-logos-1.png',
             './dist/img/client-logos-2.png',
@@ -92,9 +94,5 @@ const app = new Vue({
             'Pre-natel Care',
             'Ultrasound Echocardiogram',
         ]
-    },
-
-    methods:{
-
     },
 });

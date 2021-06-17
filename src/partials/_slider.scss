@@ -8,5 +8,34 @@
         justify-content: space-between;
         flex-wrap: nowrap;
         padding: 5rem 0;
+        overflow-x: hidden;
+
+        &>div {
+            animation: slide_show 10s infinite;
+        }
+    }
+
+}
+
+@keyframes slide_show {
+
+    0%,
+    100% {
+        /* Beggining and end of animation */
+        margin-left: 0%;
+    }
+
+    30% {
+        /* Beggining of transition
+        margin-left: 0%; /* Until 3 seconds, keep same frame */
+    }
+
+    50% {
+        /* End of transition */
+        margin-left: -100%;
+        /* in 5 seconds, finish animation
+    
+    80% { /* In 8 seconds, start transition to first frame */
+        margin-left: -100%;
     }
 }
