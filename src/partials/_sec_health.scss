@@ -8,6 +8,11 @@
 
     .card {
         width: 33%;
-        margin-bottom: 3rem;
+    }
+
+    .card:not(:nth-child(1)),
+    .card:not(:nth-child(2)),
+    .card:not(:nth-child(3)) {
+        margin-top: 3rem;
     }
 }

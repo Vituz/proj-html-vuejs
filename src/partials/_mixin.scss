@@ -59,8 +59,9 @@
 
 // Standard Section
 @mixin standard_section {
+    padding: 5rem 0;
+
     &>div {
-        padding: 5rem 0;
         text-align: center;
         color: $cube_text;
 
@@ -92,7 +93,7 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin: 6rem 0;
+        margin-top: 5rem;
 
         .card {
             text-align: center;

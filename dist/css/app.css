@@ -95,10 +95,9 @@ header nav div ul li:last-child a {
 }
 
 .welcome {
-  margin: auto;
   text-align: center;
   color: #46525F;
-  padding-top: 5rem;
+  padding: 5rem 0;
 }
 .welcome h2 {
   font-size: 2.5rem;
@@ -116,7 +115,7 @@ header nav div ul li:last-child a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 6rem 0;
+  margin-top: 5rem;
 }
 .card_container .card {
   text-align: center;
@@ -144,9 +143,9 @@ header nav div ul li:last-child a {
 
 .meet {
   background-color: #F1EFEF;
+  padding: 5rem 0;
 }
 .meet > div {
-  padding: 5rem 0;
   text-align: center;
   color: #46525F;
 }
@@ -207,8 +206,10 @@ header nav div ul li:last-child a {
   width: 270px;
 }
 
-.health > div {
+.health {
   padding: 5rem 0;
+}
+.health > div {
   text-align: center;
   color: #46525F;
 }
@@ -237,5 +238,47 @@ header nav div ul li:last-child a {
 }
 .health .card {
   width: 33%;
-  margin-bottom: 3rem;
+}
+.health .card:not(:nth-child(1)),
+.health .card:not(:nth-child(2)),
+.health .card:not(:nth-child(3)) {
+  margin-top: 3rem;
+}
+
+.tour {
+  background-image: url("../img/paralax-bg-tour-facilities.jpg");
+  padding: 5rem 0;
+}
+.tour > div {
+  text-align: center;
+  color: #46525F;
+}
+.tour > div img {
+  margin-bottom: 2rem;
+}
+.tour > div h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.tour > div hr {
+  width: 30%;
+  margin: 2rem auto;
+  border: 1px solid #BCBCBD;
+}
+.tour > div > p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin: 1rem auto;
+  font-weight: 300;
+  width: 84%;
+}
+.tour div {
+  color: #ffffff;
+}
+.tour .play {
+  margin-top: 3rem;
+}
+.tour .play:hover {
+  cursor: pointer;
 }

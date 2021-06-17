@@ -1,0 +1,17 @@
+.tour {
+    background-image: url('../img/paralax-bg-tour-facilities.jpg');
+
+    @include standard_section;
+
+    div {
+        color: $cube_white;
+    }
+
+    .play {
+        margin-top: 3rem;
+    }
+
+    .play:hover {
+        cursor: pointer;
+    }
+}
