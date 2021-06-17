@@ -1,0 +1,29 @@
+.appointment {
+
+    background-image: url('../img/make-an-appointment.jpg');
+    padding: 5rem 0;
+
+    &>div {
+        text-align: center;
+        color: $cube_white;
+
+        img {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            @include section_title;
+        }
+
+        hr {
+            @include section_hr;
+        }
+
+
+        &>p {
+            @include section_p; //eliminare
+        }
+
+    }
+
+}

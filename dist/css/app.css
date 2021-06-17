@@ -250,6 +250,8 @@ header nav div ul li:last-child a {
 
 .tour {
   background-image: url("../img/paralax-bg-tour-facilities.jpg");
+  background-size: cover;
+  background-position: center;
   padding: 5rem 0;
 }
 .tour > div {
@@ -328,4 +330,38 @@ header nav div ul li:last-child a {
 
 .rehab {
   background-color: #327EC7;
+}
+
+.appointment {
+  background-image: url("../img/make-an-appointment.jpg");
+  padding: 5rem 0;
+}
+.appointment > div {
+  text-align: center;
+  color: #ffffff;
+}
+.appointment > div img {
+  margin-bottom: 2rem;
+}
+.appointment > div h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.appointment > div hr {
+  width: 30%;
+  margin: 2rem auto;
+  border: 1px solid #BCBCBD;
+}
+.appointment > div > p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin: 1rem auto;
+  font-weight: 300;
+  width: 84%;
+}
+
+form input,
+form textarea {
+  background: transparent;
+  border: 1px solid #ffffff;
 }

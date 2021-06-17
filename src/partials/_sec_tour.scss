@@ -1,5 +1,7 @@
 .tour {
     background-image: url('../img/paralax-bg-tour-facilities.jpg');
+    background-size: cover;
+    background-position: center;
 
     @include standard_section;
 
