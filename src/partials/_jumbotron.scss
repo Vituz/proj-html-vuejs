@@ -23,4 +23,8 @@
         @include btn;
         text-transform: uppercase;
     }
+
+    &>span:hover {
+        cursor: pointer;
+    }
 }

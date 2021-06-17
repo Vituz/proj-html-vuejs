@@ -1,0 +1,49 @@
+.learn_more {
+    color: $cube_white;
+    display: flex;
+    justify-content: center;
+
+    &>div {
+        width: calc(100% / 3);
+        text-align: center;
+        padding: 3rem 0.5rem;
+
+        &>h2 {
+            font-weight: 400;
+        }
+
+        &>img {
+            margin: 1rem 0;
+        }
+
+        &>p {
+            line-height: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        &>div {
+            padding: 0.7rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            border: 1px solid white;
+            width: 30%;
+            margin: auto;
+        }
+
+        &>div:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.emergency {
+    background-color: $learn_f;
+}
+
+.diagnostic {
+    background-color: $learn_s;
+}
+
+.rehab {
+    background-color: $learn_t;
+}

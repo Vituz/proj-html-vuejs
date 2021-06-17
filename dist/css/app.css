@@ -93,6 +93,9 @@ header nav div ul li:last-child a {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
+.jumbo_text > span:hover {
+  cursor: pointer;
+}
 
 .welcome {
   text-align: center;
@@ -281,4 +284,48 @@ header nav div ul li:last-child a {
 }
 .tour .play:hover {
   cursor: pointer;
+}
+
+.learn_more {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+.learn_more > div {
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 3rem 0.5rem;
+}
+.learn_more > div > h2 {
+  font-weight: 400;
+}
+.learn_more > div > img {
+  margin: 1rem 0;
+}
+.learn_more > div > p {
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+.learn_more > div > div {
+  padding: 0.7rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  border: 1px solid white;
+  width: 30%;
+  margin: auto;
+}
+.learn_more > div > div:hover {
+  cursor: pointer;
+}
+
+.emergency {
+  background-color: #3AAFBF;
+}
+
+.diagnostic {
+  background-color: #3597C3;
+}
+
+.rehab {
+  background-color: #327EC7;
 }
