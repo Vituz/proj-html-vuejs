@@ -1,0 +1,86 @@
+.footer_container {
+    width: 90%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+
+    &>div {
+        width: 33%;
+
+        .social_icon {
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+    }
+
+    .description {
+        p {
+            font-weight: 300;
+            font-size: 1rem;
+            line-height: 2rem;
+            color: $cube_text;
+            margin-top: 1rem;
+        }
+
+        &>hr {
+            margin-top: 1rem;
+            border: 1px solid $cube_gray;
+            background-color: $cube_gray;
+        }
+
+        &>h4 {
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+    }
+
+    .contacts {
+        margin: 0 2rem;
+    }
+
+    .contacts,
+    .departments {
+        color: $cube_text;
+
+        &>h3 {
+            text-transform: uppercase;
+        }
+
+        & hr {
+            margin: 1rem 0;
+            width: 10%;
+            border: 1px solid $cube_gray;
+            background-color: $cube_gray;
+        }
+
+        & ul {
+            list-style: none;
+
+            li {
+                padding: 0.5rem 0;
+            }
+        }
+
+        & span {
+            color: $cube_primary;
+        }
+
+        & a {
+            text-decoration: none;
+            color: $cube_text;
+        }
+    }
+}
+
+.departments span {
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.departments a {
+    padding-left: 0.5rem;
+}
+
+.contacts a {
+    padding-left: 1rem;
+}

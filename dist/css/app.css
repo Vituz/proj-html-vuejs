@@ -34,6 +34,10 @@ body {
   color: #3F729B;
 }
 
+.fa-youtube-square {
+  color: #CD201F;
+}
+
 header {
   background-image: url("../img/header-image-homepage.jpg");
   color: #ffffff;
@@ -371,6 +375,7 @@ form {
 }
 form input,
 form textarea {
+  color: #ffffff;
   margin: 1rem 0;
   padding: 1rem 0.5rem;
   background: transparent;
@@ -401,4 +406,94 @@ form .submit {
   width: 100%;
   background-color: #39AFBB;
   color: #ffffff;
+}
+
+.slider {
+  background: linear-gradient(90deg, #50BCB5 0%, #3F73B4 100%);
+}
+.slider .slider_image {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 5rem 0;
+}
+
+.footer_container {
+  width: 90%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_container > div {
+  width: 33%;
+}
+.footer_container > div .social_icon {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+.footer_container .description p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #46525F;
+  margin-top: 1rem;
+}
+.footer_container .description > hr {
+  margin-top: 1rem;
+  border: 1px solid #BCBCBD;
+  background-color: #BCBCBD;
+}
+.footer_container .description > h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.footer_container .contacts {
+  margin: 0 2rem;
+}
+.footer_container .contacts,
+.footer_container .departments {
+  color: #46525F;
+}
+.footer_container .contacts > h3,
+.footer_container .departments > h3 {
+  text-transform: uppercase;
+}
+.footer_container .contacts hr,
+.footer_container .departments hr {
+  margin: 1rem 0;
+  width: 10%;
+  border: 1px solid #BCBCBD;
+  background-color: #BCBCBD;
+}
+.footer_container .contacts ul,
+.footer_container .departments ul {
+  list-style: none;
+}
+.footer_container .contacts ul li,
+.footer_container .departments ul li {
+  padding: 0.5rem 0;
+}
+.footer_container .contacts span,
+.footer_container .departments span {
+  color: #39AFBB;
+}
+.footer_container .contacts a,
+.footer_container .departments a {
+  text-decoration: none;
+  color: #46525F;
+}
+
+.departments span {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.departments a {
+  padding-left: 0.5rem;
+}
+
+.contacts a {
+  padding-left: 1rem;
 }

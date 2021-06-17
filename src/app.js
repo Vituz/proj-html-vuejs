@@ -66,6 +66,32 @@ const app = new Vue({
                 desc: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas',
             },
         ],
+
+        partnerSlider:[
+            './dist/img/client-logos-1.png',
+            './dist/img/client-logos-2.png',
+            './dist/img/client-logos-3.png',
+            './dist/img/client-logos-4.png',
+        ],
+
+        contacts:[
+            {
+                icon:'map-marker-alt',
+                text:'121 King Street, London United Kingdom',
+            },
+            {
+                icon: 'phone',
+                text:'1.800.458.566',
+            },
+        ],
+
+        departments:[
+            'Cardiology',
+            'Pediactrics',
+            'Diabetes Care',
+            'Pre-natel Care',
+            'Ultrasound Echocardiogram',
+        ]
     },
 
     methods:{

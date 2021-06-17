@@ -1,0 +1,12 @@
+.slider {
+    background: linear-gradient(90deg, #50BCB5 0%, #3F73B4 100%);
+
+    .slider_image {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 5rem 0;
+    }
+}

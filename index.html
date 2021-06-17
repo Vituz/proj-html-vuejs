@@ -170,7 +170,7 @@
                                 <!-- /Doctors Info -->
                             </div>
                         </div>
-                        <!-- /Cards -->
+                    <!-- /Cards -->
                 </div>
             </div>
             <!-- /Meet Section -->
@@ -325,12 +325,13 @@
 
                 </div>
 
+                <!-- Form -->
                 <div class="container">
                     <form action="#">
                         <input type="name" placeholder="Name*" required>
                         <input type="email" placeholder="Email*" required>
                         <input type="tel" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-                        
+
                         <div class="date">
                             <i class="fas fa-calendar-alt"></i> 
                             <input placeholder="Appointment Date" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" />
@@ -341,13 +342,85 @@
                         <input type="submit" value="MAKE AN APPOINTMENT" class="submit">
                     </form>
                 </div>
+                <!-- /Form -->
             </div>
             <!-- /Make Appointment -->
+
+            <div class="slider">
+                <div class="slider_image" >
+                    <img :src="logo" alt="logo" v-for="(logo, idnex) in partnerSlider">
+                </div>
+            </div>
         </main>
         <!-- /Main -->
 
         <!-- Footer -->
         <footer>
+            <div class="footer_container">
+
+                <!-- Description -->
+                <div class="description">
+                    <img src="./dist/img/medical_logo_1x_dark.png" alt="Logo Avada Health">
+                    <p>
+                        Sed ut perspiciatis omnism iste natus error sit voluptatem accusantium dolemue launti totam aperiam, eaque ipsa abillo. Invente veriatis et quasi architecto beatae luptatem accusantium, remaperiamsiat. Voluptatem accusest etsium doloremque laudaien. Lorem ipsum sits dolores ets unser.
+                    </p>
+
+                    <hr>
+
+                    <h4>
+                        learn more about us
+                    </h4>
+
+                    <!-- Social Link -->
+                    <div class="social_icon">
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </div>
+                    <!-- /Social Link -->
+                </div>
+                <!-- /Description -->
+
+                <!-- Contacts -->
+                <div class="contacts">
+                    <h3>contact information</h3>
+
+                    <hr>
+
+                    <ul>
+                        <li v-for="contact in contacts">
+                            <span><i :class="'fas fa-' + contact.icon"></i></span>
+                            <a href="#"> {{ contact.text }} </a> 
+                        </li>
+                    </ul>
+                </div>
+                <!-- /Contacts -->
+
+                <!-- Departments -->
+                <div class="departments">
+                    <h3>medical departments</h3>
+
+                    <hr>
+
+                    <ul>
+                        <li v-for="dep in departments">
+                            <span><i class="fas fa-chevron-circle-right"></i></span>
+                            <a href="#"> {{ dep }} </a> 
+                        </li>
+                    </ul>
+                </div>
+                <!-- /Departments -->
+
+            </div>
 
         </footer>
         <!-- /Footer -->
