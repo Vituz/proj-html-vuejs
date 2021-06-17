@@ -1,0 +1,38 @@
+.copyright {
+    background-color: $median_bg;
+    position: relative;
+
+    .copyright_container {
+        padding: 1rem 0;
+        width: 90%;
+        margin: auto;
+
+        span {
+            color: $cube_text;
+        }
+
+        a {
+            text-decoration: none;
+            color: $cube_text;
+        }
+
+        a::before {
+            content: '|';
+            padding: 0 1rem;
+        }
+    }
+
+    .hidden_menu {
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        background-color: #474747;
+        color: #ffffff;
+        padding: 0.3rem 0.7rem;
+        border-radius: 0.3rem 0.3rem 0 0;
+    }
+
+    .hidden_menu:hover {
+        cursor: pointer;
+    }
+}

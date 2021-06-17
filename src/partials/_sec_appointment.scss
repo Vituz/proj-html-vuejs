@@ -21,9 +21,8 @@
             @include section_hr;
         }
 
-
         &>p {
-            @include section_p; //eliminare
+            @include section_p;
         }
 
     }

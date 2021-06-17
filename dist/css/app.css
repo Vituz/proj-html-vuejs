@@ -407,6 +407,9 @@ form .submit {
   background-color: #39AFBB;
   color: #ffffff;
 }
+form .submit:hover {
+  cursor: pointer;
+}
 
 .slider {
   background: linear-gradient(90deg, #50BCB5 0%, #3F73B4 100%);
@@ -496,4 +499,53 @@ form .submit {
 
 .contacts a {
   padding-left: 1rem;
+}
+
+.btn_view {
+  color: #515151;
+  border: 1px solid #515151;
+  padding: 1rem 4rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-top: 3rem;
+}
+
+.btn_view:hover {
+  cursor: pointer;
+}
+
+.copyright {
+  background-color: #F1EFEF;
+  position: relative;
+}
+.copyright .copyright_container {
+  padding: 1rem 0;
+  width: 90%;
+  margin: auto;
+}
+.copyright .copyright_container span {
+  color: #46525F;
+}
+.copyright .copyright_container a {
+  text-decoration: none;
+  color: #46525F;
+}
+.copyright .copyright_container a::before {
+  content: "|";
+  padding: 0 1rem;
+}
+.copyright .hidden_menu {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  background-color: #474747;
+  color: #ffffff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+.copyright .hidden_menu:hover {
+  cursor: pointer;
 }

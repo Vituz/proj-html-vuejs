@@ -48,4 +48,8 @@ form {
         background-color: $cube_primary;
         color: $cube_white;
     }
+
+    .submit:hover {
+        cursor: pointer;
+    }
 }
