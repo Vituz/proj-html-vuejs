@@ -429,25 +429,25 @@ form .submit:hover {
 
 @-webkit-keyframes slide_show {
   0%, 100% {
-    margin-left: 50%;
+    margin-left: 0%;
   }
   50% {
-    margin-left: -100%;
+    margin-left: -50%;
   }
   80% {
-    margin-left: -100%;
+    margin-left: -50%;
   }
 }
 
 @keyframes slide_show {
   0%, 100% {
-    margin-left: 50%;
+    margin-left: 0%;
   }
   50% {
-    margin-left: -100%;
+    margin-left: -50%;
   }
   80% {
-    margin-left: -100%;
+    margin-left: -50%;
   }
 }
 .footer_container {
